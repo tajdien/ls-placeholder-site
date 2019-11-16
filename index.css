@@ -1,118 +1,167 @@
 /* RESET CSS */
-
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-	margin-block-start: 0;
-	margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 /* STRUCUTRE */
-
 .main {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-left {
-	height: 100vh;
-	justify-content: center;
-	display: flex;
-	align-items: center;
-	width: 50vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
 }
+
 .main-right {
-	background-color: #fff0ff;
-	height: 100vh;
-	width: 50vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-color: #fff0ff;
+  height: 100vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .text-main {
-	display: flex;
-	flex-flow: column;
-	width: 700px;
-	margin-bottom: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: solid red 1px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 700px;
+  /* margin-bottom: 12rem; */
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid blue;
 }
 
 .footer-left {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
 }
 
 .footer-right {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
 }
-/* TEXT */
 
+/* TEXT */
 .text {
-	font-family: 'Karla', sans-serif;
-	font-style: normal;
-	font-weight: normal;
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .text-logo {
-	font-family: 'Playfair Display', serif;
-	font-size: 97px;
-	line-height: 129px;
-	text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 97px;
+  line-height: 129px;
+  text-transform: uppercase;
 }
 
 .text-underscore {
-	margin-top: -0.5rem;
-	background-color: black;
-	width: 615px;
-	height: 4.5px;
-	margin-bottom: 2rem;
+  margin-top: -0.5rem;
+  background-color: black;
+  width: 615px;
+  height: 4.5px;
+  margin-bottom: 2rem;
 }
 
 .text-soon {
-	font-size: 45px;
-	color: rgba(0, 0, 0, 0.9);
-	margin-bottom: 0.5rem;
+  font-size: 45px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 0.5rem;
 }
 
 .text-info {
-	font-size: 22px;
-	color: rgba(0, 0, 0, 0.75);
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .text-email {
-	font-size: 26px;
+  font-size: 1.4rem;
 }
 
 .text-insta {
-	font-size: 26px;
+  font-size: 1.4rem;
 }
-/* IMG */
 
+/* IMG */
 .img-progress-container img {
-	width: 759px;
-	height: 563px;
+  width: 759px;
+  height: 563px;
 }
 
 .img-mail-container img {
-	margin-right: 1rem;
-	width: 40px;
-	height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .img-insta-container img {
-	margin-right: 1rem;
-	width: 40px;
-	height: 40px;
+  width: 30px;
+  height: 30px;
 }
+/*# sourceMappingURL=index.css.map */

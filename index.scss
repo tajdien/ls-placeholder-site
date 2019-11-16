@@ -1,0 +1,134 @@
+// Variables
+
+$icon-size: 30px;
+
+$border: solid red 1px;
+
+$size-mid: 'only screen and (max-width: 640px)';
+$size-small: 'only screen and (max-width: 320px)';
+
+/* RESET CSS */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* STRUCUTRE */
+
+.main {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.main-left {
+	height: 100vh;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 50vw;
+}
+.main-right {
+	background-color: #fff0ff;
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	// align-items: center;
+	justify-content: space-around;
+	flex-flow: column;
+}
+
+.text-container {
+	display: flex;
+	flex-grow: 1;
+}
+
+.text-main {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	border: $border;
+	flex-flow: column;
+	width: 700px;
+	/* margin-bottom: 12rem; */
+}
+
+.footer {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	border: 1px solid blue;
+}
+
+.footer-left {
+	display: flex;
+	border: 1px solid red;
+}
+
+.footer-right {
+	display: flex;
+	border: 1px solid red;
+}
+/* TEXT */
+
+.text {
+	font-family: 'Karla', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.text-logo {
+	font-family: 'Playfair Display', serif;
+	font-size: 97px;
+	line-height: 129px;
+	text-transform: uppercase;
+}
+
+.text-underscore {
+	margin-top: -0.5rem;
+	background-color: black;
+	width: 615px;
+	height: 4.5px;
+	margin-bottom: 2rem;
+}
+
+.text-soon {
+	font-size: 45px;
+	color: rgba(0, 0, 0, 0.9);
+	margin-bottom: 0.5rem;
+}
+
+.text-info {
+	font-size: 22px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.text-email {
+	font-size: 1.4rem;
+}
+
+.text-insta {
+	font-size: 1.4rem;
+}
+/* IMG */
+
+.img-progress-container img {
+	width: 759px;
+	height: 563px;
+}
+
+.img-mail-container img {
+	width: $icon-size;
+	height: $icon-size;
+}
+
+.img-insta-container img {
+	width: $icon-size;
+	height: $icon-size;
+}
